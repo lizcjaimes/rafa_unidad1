@@ -1,0 +1,82 @@
+/* Paleta de colores */
+:root {
+    --azul-claro: #4A90E2;
+    --azul-oscuro: #1E3A5F;
+    --azul-medio: #357ABD;
+    --blanco: #ffffff;
+    --gris-claro: #f4f4f4;
+    --gris-oscuro: #2C3E50;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--azul-claro);
+    color: var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: var(--azul-oscuro);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones */
+button, .btn {
+    background: var(--azul-medio);
+    color: var(--blanco);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background: var(--azul-claro);
+}
+
+/* Formularios */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid var(--gris-claro);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--azul-medio);
+}
+
+/* Links */
+a {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 90%;
+    }
+}
