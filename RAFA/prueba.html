@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Gestión de Proyectos</title>
+    <link rel="stylesheet" href="dashboard.css">
+    
+
+   
+</head>
+
+<body>
+
+    <div class="barra-lateral">
+        <div class="nombre-pagina">
+            <ion-icon id="home" name="menu-outline"></ion-icon>
+            <span>BIENVENIDO</span>
+        </div>
+        <!-- <button class="boton" onclick="window.location.href='/proyectoss.html'">
+            <ion-icon name="add-outline"></ion-icon>
+            <span>Crear nuevo</span>
+        </button> -->
+
+       
+          
+
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a id="inbo" href="#">
+                        <ion-icon name="home-outline"></ion-icon> 
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="proyectos.html">
+                        <ion-icon name="folder-outline"></ion-icon>
+                        <span>Proyectos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="agregar/gestion_equipos.html">
+                        <ion-icon name="people-outline"></ion-icon>
+                        <span>Equipos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="settings-outline"></ion-icon>
+                        <span>Configuración</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="linea"></div>
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="titulos">
+            <h1>Inicio</h1>
+        </div>
+        <div class="buttons">
+            <!-- Botones con clase .btn -->
+            <button class="btn" data-url="resumen.html">Resumen de Proyectos</button>
+            <button class="btn" data-url="gestion_equipos.html">Equipos Activos</button>
+            <button class="btn" data-url="recursos.html">Recursos</button>
+            <button class="btn" data-url="calendario.html">Calendario</button>
+        </div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+

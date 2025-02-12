@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root{
+    --color-barra-lateral:rgb(255, 254, 254);
+
+    --color-texto:rgb(10, 0, 157);
+    --color-texto-menu:#0004ff;
+
+    --color-boton:#0051ff;
+    --color-boton-texto:rgb(255, 255, 255);
+
+    --color-menu-hover: rgba(0, 85, 255, 0.792);
+    --color-menu-hover-texto: rgb(245, 247, 244);
+
+    --color-linea: #b8daec;
+    --color-body:#ffffff;
+/* color formulario pagina.html */
+    --color-form:rgb(71, 131, 253);
+    --color-sombra:rgba(9, 0, 173, 0.498);
+
+
+}
+.dark-mode{
+    --color-barra-lateral:rgb(0, 34, 106);
+
+    --color-texto:rgb(250, 247, 247);
+    --color-texto-menu:rgb(92, 255, 255);
+
+    --color-boton:rgba(0, 1, 44, 0.726);
+    --color-boton-texto:rgb(255, 255, 255);
+
+    --color-menu-hover: rgba(4, 18, 88, 0.726);
+    --color-menu-hover-texto: rgb(255, 255, 255);
+
+    --color-linea: rgb(184, 218, 236); 
+    --color-body:#4d4d4d;
+/* color formulario pagina.html */
+--color-form:rgb(39, 63, 219);
+--color-sombra:rgba(0, 0, 123, 0.651);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", serif;
+}
+body{
+  
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-body);
+
+}
+/* INICIO pagina.html------------------- */
+.div-titulo {
+    color: var(--color-texto);
+     width: 100%;
+     height: 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 1px 1px rgb(12, 52, 171);
+ 
+  }
+
+  .div-titulo h1{
+    font-weight: 300;
+    color: var(--color-texto);
+
+ }
+ .contenedor{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+ }
+  /* ESTILOS FORMULARIO */
+  .contenedor .div-formulario {
+    width: 300px;
+    height: 400px;
+    margin: 15px 15px;
+    background-color: var(--color-form);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px var(--color-sombra);
+ }
+ .contenedor .div-formulario h2 {
+    margin-top: 10px;
+     font-weight: 300;
+     font-size: 2em;
+     color:var(--color-texto);
+  }
+  .contenedor .div-formulario form{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .contenedor .div-formulario form input,
+.contenedor .div-formulario form button{
+   width: 60%;
+   padding: 10px 10px;
+   margin: 10px 10px;
+}
+/* LISTADO ----------------------------- */
+.contenedor .div-listado {
+    width:fit-content;
+    height: calc(100% - 50px);
+    margin: 15px 100px;
+    background-color: var(--color-form);
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    border-radius: 10px;
+    box-shadow: 10px 10px var(--color-sombra);
+ }
+ .contenedor .div-listado h2 {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2em;
+    color: var(--color-texto);
+  }
+  .contenedor .div-listado .div-proyectos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    margin: 10px 0;
+    padding: 0 30px;
+  }
+  .contenedor .div-listado .div-proyectos p {
+    margin: 10px 0;
+    font-size: 1em;
+    color:var(--color-boton-texto);
+  }
+  .btn-editar{
+    color: var(--color-texto-menu);
+    border-radius: 20%;
+    background-color: var(--color-barra-lateral);
+   }
+   .btn-eliminar{
+    color:var(--color-menu-hover-texto) ;
+    border-radius: 20%;
+    background-color:var(--color-texto-menu);
+   }
+
+  /* FIN PAGINA.HTML-------------- */
+
+.barra-lateral{
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    padding: 20px 15px;
+    background-color:var(--color-barra-lateral);
+    transition: width 0.5s ease,background-color 0.3s ease;
+}
+.mini-barra-lateral{
+    width: 80px;
+
+}
+/* BIENVENIDOS */
+.nombre-pagina {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Ocultar texto "Bienvenido" cuando la barra está contraída */
+.mini-barra-lateral .nombre-pagina span {
+    display: none;
+}
+
+.barra-lateral  span{
+    /* BOARRA BORDES */
+
+    width: 100px;
+    /* investigar */
+    white-space: nowrap;
+    font-size: 18px;
+    text-align: left;
+    opacity:1 ;
+    transition: opacity 0.5s ease,widht 0.5s ease;
+}
+
+/* BOTON BARRA */
+.boton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #0044cc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Cuando la barra está contraída, el botón solo muestra el icono */
+.mini-barra-lateral .boton {
+    justify-content: center;
+    width: 50px;
+    padding: 10px;
+}
+
+/* Ocultar el texto "Crear Nuevo" cuando la barra está contraída */
+.mini-barra-lateral .boton span {
+    display: none;
+}
+
+.barra-lateral  span.oculto{
+    opacity: 0;
+    width: 0;
+}
+/* NOMBRE DE LA PAGINA */
+.barra-lateral .nombre-pagina{
+
+    width: 100%;
+    height: 45px;
+    color: var(--color-texto);
+    margin-bottom: 40px; ;
+    display: flex;
+    align-items: center;
+   
+}
+.titulos{
+    color: var(--color-texto);
+}
+.barra-lateral .nombre-pagina ion-icon{
+
+min-width: 50px;
+font-size: 40px;
+cursor: pointer;
+}
+.barra-lateral .nombre-pagina span{
+    margin-left: 5px;
+    font-size: 25px;
+
+}
+/* -----BOTON */
+.barra-lateral .boton{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-boton);
+    color: var(--color-boton-texto);
+
+}
+.barra-lateral .boton ion-icon{
+   
+    min-width: 50px;
+    font-size: 25px;
+}
+/* MENU NAVEGADOR */
+.barra-lateral .navegacion li{
+    
+    list-style: none;
+    display: flex;
+    margin-bottom: 5px;
+}
+.barra-lateral .navegacion a{
+   
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: var(--color-texto-menu);
+}
+.barra-lateral .navegacion a:hover{
+    background-color: var(--color-menu-hover);
+    color: var(--color-menu-hover-texto);
+}
+.barra-lateral .navegacion ion-icon{
+    
+    min-width: 50px;
+    font-size: 20px;
+
+
+}
+/* LINEA */
+
+.barra-lateral .linea{
+    width: 100%;
+    height: 1PX;
+    background-color:var(--color-linea);
+}
+
+/* MODO OSCURO */
+.barra-lateral .modo-oscuro{
+    
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.barra-lateral .modo-oscuro .info{
+    
+    width: 150px;
+    height: 45px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    color: var(--color-texto-menu);
+}
+.barra-lateral .modo-oscuro ion-icon{
+   
+    width: 50px;
+    font-size: 20px;
+}
+/* SWICHT */
+.barra-lateral .modo-oscuro .switch{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    height: 45px;
+}
+.barra-lateral .modo-oscuro .base{
+    position:relative;
+    display: flex;
+    align-items: center;
+    width: 35px;
+    height: 20px;
+    background-color: rgb(155, 154, 154);
+    border-radius: 50px;
+
+}
+.barra-lateral .modo-oscuro .circulo{
+    position: absolute;
+    width: 18px;
+    height: 90%;
+    background-color: rgb(0, 0, 176);
+    border-radius: 50%;
+    left: 2px;
+}
+
+
+* Estilos de los botones en la sección principal */
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Botones con clase .btn */
+.btn {
+    background-color: var(--color-boton);
+    color: var(--color-boton-texto);
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover */
+.btn:hover {
+    background-color: #357abd;
+    transform: scale(1.05);
+}
+
+/* Cambio del cursor */
+.btn:active {
+    background-color: #2a5d9f;
+}
+
+/* USUARIO */
+
+/* MAIN */
+
+#inbox{
+    background-color: var(--color-menu-hover);
+    color: var(--color-menu-hover-texto);
+}
+
+main{
+    margin-left: 250px;
+    padding: 20px;
+}
+main.min-main{
+    margin-left: 80px;
+
+}
+
+
+/* Estilos para la página de proyectoos */
+.proyectos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    flex: 1; /* Para que el contenedor de proyectos ocupe el espacio restante */
+}
+
+.proyecto-card {
+    background-color:var(--color-boton);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.proyecto-card:hover {
+    transform: scale(1.05);
+}
+
+.proyecto-titulo {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.proyecto-resumen {
+    margin-bottom: 10px;
+}
+
+.proyecto-equipo {
+    font-style: italic;
+    color: var(--color-boton-texto);
+}
+/* texto de los proyectos */
+.proyecto-card {
+    background-color: var(--color-boton); /* Usa el mismo color de los botones */
+    color: var(--color-boton-texto);
+}
+
+/* PARA EQUIPOS------------------------------------------------------------------------------ */
+/* Estilos para la página de proyectos */
+.equipos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    flex: 1; /* Para que el contenedor de proyectos ocupe el espacio restante */
+}
+.equipo-card {
+    background-color:var(--color-boton);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.equipo-card:hover {
+    transform: scale(1.05);
+}
+.equipo-titulo {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.equipo-card {
+    background-color: var(--color-boton); /* Usa el mismo color de los botones */
+    color: var(--color-boton-texto);
+}
